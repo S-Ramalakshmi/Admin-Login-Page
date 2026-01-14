@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h3 class="title">Admin Login</h3>
+        
+        <form action="">
+            <div class="input1">
+                 <label for="">Username</label>
+                <input type="text" placeholder="Enter Username">
+            </div>
+            <div class="input2">
+                <label for="">Password</label>
+                <div class="password-wrapper">
+               <input type="password" id="password" placeholder="Enter password"  oninput="toggleEyeVisibility()">
+                  <span class="eye" id="eye" onclick="togglePassword()"><img src="https://img.icons8.com/?size=100&id=85028&format=png&color=000000" alt="" id="pic"></span>
+                </div>
+ 
+            </div>
+
+            <button class="login">Login</button>
+        </form>
+
+    </div>
+
+            <script src="main.js"></script>
+
+</body>
+</html>
