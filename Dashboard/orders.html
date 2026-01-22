@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="orders.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "74PfZO34k1FO586rT",
+      });
+   })();
+</script>
+</head>
+<body>
+
+<!-- TOGGLE -->
+<input type="checkbox" id="menu-toggle">
+
+<!-- MOBILE HEADER -->
+<header class="mobile-header">
+  <label for="menu-toggle" class="hamburger">☰</label>
+  <h2>Admin Dashboard</h2>
+  <img src="https://img.icons8.com/?size=100&id=37787&format=png&color=000000" width="30px" class="new-btn">
+</header>
+
+<!-- OVERLAY -->
+<label for="menu-toggle" class="overlay"></label>
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- CLOSE BUTTON -->
+    <label for="menu-toggle" class="close-btn">✕</label>
+
+    <h2 class="logo"><img src="tfd.png" width="160px"></h2>
+    <nav class="menu">
+      <a href="./index.html"><img src="https://img.icons8.com/?size=100&id=14096&format=png&color=000000" width="16px">Home</a>
+      <a href="./orders.html" class="active"><img src="https://img.icons8.com/?size=100&id=4722&format=png&color=000000" width="16px">Orders</a>
+      <a href="./category.html"><img src="https://img.icons8.com/?size=100&id=vxOr7mumH0q9&format=png&color=000000" width="16px">Category</a>
+      <a href="./product.html"><img src="https://img.icons8.com/?size=100&id=85058&format=png&color=000000" width="16px">Product</a>
+      <a href="./report.html"><img src="https://img.icons8.com/?size=100&id=hJecpPVXgZ5Y&format=png&color=000000" width="16px">Report</a>
+      <a href="./customer.html"><img src="https://img.icons8.com/?size=100&id=85120&format=png&color=000000" width="16px">Customer</a>
+      <a href="./settings.html"><img src="https://img.icons8.com/?size=100&id=14099&format=png&color=000000" width="16px">Settings</a>
+      <a href="./logout.html"><img src="https://img.icons8.com/?size=100&id=22112&format=png&color=000000" width="16px">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+ 
+    <section class="orders">
+
+    <div class="top-bar">
+      <h1>Admin Dashboard</h1>
+    </div>
+        <h2 class="order-title">Orders</h2>
+        <div class="order-head">
+        <div class="date">
+            <button id="showdate">
+            <span class="today-text">Today</span>
+            <span class="arrow">▼</span>
+            </button>
+            <input type="date" id="dateInput">
+        </div>
+
+        <div class="order-details">
+            <div class="order">Orders <br> <strong>71</strong></div>
+            <div class="order">Delivered <br> <strong>41</strong></div>
+            <div class="order">Shipping <br> <strong>80</strong></div>
+        </div>
+        </div>
+
+        <div class="navigate">
+            <div class="order-columns">
+                <button class="name" id="all">All</button>
+                <button class="name" id="unpaid">Unpaid</button>
+                <button class="name" id="lead">Lead</button>
+                <button class="name" id="delivered">Delivered</button>
+                <button class="name" id="shipping">Shipping</button>
+            </div>
+            <div class="sort-symbol">
+                <img src="https://img.icons8.com/?size=100&id=qlFXOJRVWS0B&format=png&color=000000" width="20px" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="table-wrapper" id="table-1">
+        <table class="responsive-table">
+            <thead>
+                <th><input type="checkbox"></th>
+                <th>Order</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Payment Status</th>
+                <th>Item</th>
+                <th>Delivery</th>
+                <th>Status</th>
+                <th>Address</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="table-wrapper" id="table-2">
+        <table class="responsive-table">
+            <thead>
+                <th><input type="checkbox"></th>
+                <th>Order</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Payment Status</th>
+                <th>Item</th>
+                <th>Delivery</th>
+                <th>Status</th>
+                <th>Address</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="table-wrapper" id="table-3">
+        <table class="responsive-table">
+            <thead>
+                <th><input type="checkbox"></th>
+                <th>Order</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Payment Status</th>
+                <th>Item</th>
+                <th>Delivery</th>
+                <th>Status</th>
+                <th>Address</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>C</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="table-wrapper" id="table-4">
+        <table class="responsive-table">
+              <thead>
+                <th><input type="checkbox"></th>
+                <th>Order</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Payment Status</th>
+                <th>Item</th>
+                <th>Delivery</th>
+                <th>Status</th>
+                <th>Address</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>D</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="table-wrapper" id="table-5">
+        <table class="responsive-table">
+              <thead>
+                <th><input type="checkbox"></th>
+                <th>Order</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Payment Status</th>
+                <th>Item</th>
+                <th>Delivery</th>
+                <th>Status</th>
+                <th>Address</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>E</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+  </div>
+
+<script src="order.js"></script>
+
+</body>
+</html>
